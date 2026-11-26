@@ -96,7 +96,7 @@ class _HomeTab extends ConsumerWidget {
           const SizedBox(height: 20),
           history.when(
             loading: () => const SizedBox.shrink(),
-            error: (_, __) => const SizedBox.shrink(),
+            error: (_, _) => const SizedBox.shrink(),
             data: (entries) => _LatestCard(entry: entries.isEmpty ? null : entries.first),
           ),
           const SizedBox(height: 12),

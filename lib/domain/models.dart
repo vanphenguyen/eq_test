@@ -135,8 +135,8 @@ class ContentBundle {
     required this.dimensionNames,
     required this.dimensionDefinitions,
     required this.orders,
-    required Map<String, Question> questionsById,
-  }) : _questionsById = questionsById {
+    required this._questionsById,
+  }) {
     _validate();
   }
 

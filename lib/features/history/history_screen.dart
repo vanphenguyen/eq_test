@@ -27,7 +27,7 @@ class HistoryTab extends ConsumerWidget {
             Expanded(
               child: history.when(
                 loading: () => const Center(child: CircularProgressIndicator()),
-                error: (_, __) => Text(l.genericError),
+                error: (_, _) => Text(l.genericError),
                 data: (entries) {
                   if (entries.isEmpty) {
                     return _Empty(l: l);
@@ -35,7 +35,7 @@ class HistoryTab extends ConsumerWidget {
                   final fmt = DateFormat.yMMMd(code).add_Hm();
                   return ListView.separated(
                     itemCount: entries.length,
-                    separatorBuilder: (_, __) => const SizedBox(height: 10),
+                    separatorBuilder: (_, _) => const SizedBox(height: 10),
                     itemBuilder: (_, i) {
                       final e = entries[i];
                       final typeLabel = e.type.code == 'full'

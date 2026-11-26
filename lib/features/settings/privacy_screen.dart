@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:url_launcher/url_launcher.dart';
+
+import '../../app/links.dart';
 
 import '../../app/providers.dart';
 import '../../l10n/app_localizations.dart';
@@ -45,6 +48,13 @@ class PrivacyScreen extends ConsumerWidget {
         padding: const EdgeInsets.all(16),
         children: [
           Text(l.privacyBody, style: Theme.of(context).textTheme.bodyLarge),
+          const SizedBox(height: 8),
+          TextButton.icon(
+            onPressed: () => launchUrl(Uri.parse(AppLinks.privacy),
+                mode: LaunchMode.externalApplication),
+            icon: const Icon(Icons.open_in_new, size: 18),
+            label: Text(l.privacyLink),
+          ),
           const SizedBox(height: 24),
           OutlinedButton.icon(
             onPressed: () => _confirmDelete(context, ref),

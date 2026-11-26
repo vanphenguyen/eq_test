@@ -48,7 +48,7 @@ class AssessmentIntroScreen extends ConsumerWidget {
       ),
       body: content.when(
         loading: () => const Center(child: CircularProgressIndicator()),
-        error: (_, __) => Center(child: Text(l.missingContentError)),
+        error: (_, _) => Center(child: Text(l.missingContentError)),
         data: (_) => SafeArea(
           child: ListView(
             padding: const EdgeInsets.all(20),

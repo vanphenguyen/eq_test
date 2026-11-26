@@ -29,12 +29,22 @@ Questions are data-driven: question text and option keys come from the JSON, not
 widgets. Scoring is pure and deterministic and rejects incomplete or invalid answers
 instead of returning a partial result.
 
+## Release
+
+Build, signing and App Store upload run on Codemagic (`codemagic.yaml`, Flutter 3.47.8). Step-by-step setup is in
+[`docs/APP_STORE.md`](docs/APP_STORE.md); the listing text is in [`docs/app-store/`](docs/app-store/).
+Legal pages are published by GitHub Pages from `site/`:
+https://vanphenguyen.github.io/eq_test/privacy.html and https://vanphenguyen.github.io/eq_test/terms.html
+(Settings > Pages > Source: GitHub Actions must be enabled once).
+
+Codemagic workflows: `ios-check` (build without an Apple account), `ios-simulator` (preview in the browser),
+`ios-release` (App Store Connect / TestFlight). GitHub Actions `Build` runs analyze and tests on every push.
+
 ## Run and test
 
 ```bash
-flutter pub get
-dart run build_runner build --delete-conflicting-outputs   # Drift codegen
-flutter gen-l10n                                           # ARB → Dart
+flutter pub get                                            # also regenerates l10n (generate: true)
+dart run build_runner build --delete-conflicting-outputs   # only after changing the Drift schema
 flutter analyze
 flutter test
 flutter run                                                # on an iOS simulator or device
@@ -51,13 +61,11 @@ Not done yet, and needed before release:
 
 - **Ads.** No ad SDK is integrated. The pack's consent flow and ad placements are not
   implemented.
-- **Terms, privacy policy, and support links.** The pack gives no URLs, so these buttons
-  are disabled in the paywall, and settings has no support link yet.
 - **StoreKit verification.** Premium unlocks on a verified `purchased`/`restored` status
   from `in_app_purchase`. Server-side or StoreKit 2 receipt verification and refund
   handling are not implemented.
-- **iOS configuration.** The In-App Purchase capability, the product in App Store Connect,
-  the App Store privacy disclosures, and screenshots still need to be set up.
+- **App Store setup.** Follow `docs/APP_STORE.md`: Apple identifier, In-App Purchase product
+  `eqtest_premium_lifetime`, Paid Apps agreement, signing via Codemagic, screenshots.
 - **Content review.** Vietnamese wording, the four added items, and result copy need
   review by a qualified reviewer and native speakers.
 - **Device testing.** The app was built and tested on Linux (unit and widget tests). It

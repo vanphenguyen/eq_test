@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:in_app_purchase/in_app_purchase.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../../app/providers.dart';
+import '../../app/links.dart';
 import '../../data/store/premium_service.dart';
 import '../../l10n/app_localizations.dart';
 
@@ -152,11 +154,13 @@ class _PaywallScreenState extends ConsumerState<PaywallScreen> {
               spacing: 16,
               children: [
                 TextButton(
-                  onPressed: null,
+                  onPressed: () => launchUrl(Uri.parse(AppLinks.terms),
+                      mode: LaunchMode.externalApplication),
                   child: Text(l.termsLink),
                 ),
                 TextButton(
-                  onPressed: null,
+                  onPressed: () => launchUrl(Uri.parse(AppLinks.privacy),
+                      mode: LaunchMode.externalApplication),
                   child: Text(l.privacyLink),
                 ),
               ],

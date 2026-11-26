@@ -16,18 +16,18 @@ GoRouter buildRouter() {
   return GoRouter(
     initialLocation: '/splash',
     routes: [
-      GoRoute(path: '/splash', builder: (_, __) => const SplashScreen()),
+      GoRoute(path: '/splash', builder: (_, _) => const SplashScreen()),
       GoRoute(
         path: '/onboarding',
-        builder: (_, __) => const OnboardingScreen(),
+        builder: (_, _) => const OnboardingScreen(),
       ),
       GoRoute(
         path: '/language',
-        builder: (_, __) => const LanguageScreen(),
+        builder: (_, _) => const LanguageScreen(),
       ),
       GoRoute(
         path: '/home',
-        builder: (_, __) => const HomeShell(),
+        builder: (_, _) => const HomeShell(),
       ),
       GoRoute(
         path: '/assessment/:type/intro',
@@ -70,11 +70,11 @@ GoRouter buildRouter() {
       ),
       GoRoute(
         path: '/paywall',
-        builder: (_, __) => const PaywallScreen(),
+        builder: (_, _) => const PaywallScreen(),
       ),
       GoRoute(
         path: '/settings/privacy',
-        builder: (_, __) => const PrivacyScreen(),
+        builder: (_, _) => const PrivacyScreen(),
       ),
     ],
   );

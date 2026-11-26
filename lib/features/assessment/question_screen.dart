@@ -47,10 +47,12 @@ class _QuestionScreenState extends ConsumerState<QuestionScreen> {
         _loading = false;
       });
     } catch (_) {
-      if (mounted) setState(() {
+      if (mounted) {
+        setState(() {
         _loading = false;
         _error = 'load';
       });
+      }
     }
   }
 

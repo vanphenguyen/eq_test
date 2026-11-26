@@ -3,7 +3,9 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
+import 'package:url_launcher/url_launcher.dart';
 
+import '../../app/links.dart';
 import '../../app/providers.dart';
 import '../../data/store/premium_service.dart';
 import '../../l10n/app_localizations.dart';
@@ -118,6 +120,27 @@ class _SettingsTabState extends ConsumerState<SettingsTab> {
               title: Text(l.settingsPrivacy),
               trailing: const Icon(Icons.chevron_right),
               onTap: () => context.push('/settings/privacy'),
+            ),
+          ),
+          const SizedBox(height: 12),
+          Card(
+            child: Column(
+              children: [
+                ListTile(
+                  leading: const Icon(Icons.description_outlined),
+                  title: Text(l.settingsTerms),
+                  trailing: const Icon(Icons.open_in_new, size: 18),
+                  onTap: () => launchUrl(Uri.parse(AppLinks.terms),
+                      mode: LaunchMode.externalApplication),
+                ),
+                ListTile(
+                  leading: const Icon(Icons.mail_outline),
+                  title: Text(l.settingsSupport),
+                  trailing: const Icon(Icons.open_in_new, size: 18),
+                  onTap: () => launchUrl(Uri.parse(AppLinks.support),
+                      mode: LaunchMode.externalApplication),
+                ),
+              ],
             ),
           ),
           const SizedBox(height: 12),

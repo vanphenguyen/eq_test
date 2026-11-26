@@ -37,7 +37,7 @@ class ResultScreen extends ConsumerWidget {
       ),
       body: entry.when(
         loading: () => const Center(child: CircularProgressIndicator()),
-        error: (_, __) => Center(child: Text(l.genericError)),
+        error: (_, _) => Center(child: Text(l.genericError)),
         data: (e) {
           if (e == null || content == null) {
             return Center(child: Text(l.genericError));

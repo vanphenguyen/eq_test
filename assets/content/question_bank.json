@@ -1,0 +1,435 @@
+{
+  "contentVersion": "1.1.0",
+  "scoringVersion": "1.0.0",
+  "scaleLabels": {
+    "en": ["Strongly disagree", "Disagree", "Neither agree nor disagree", "Agree", "Strongly agree"],
+    "vi": ["Hoàn toàn không đồng ý", "Không đồng ý", "Trung lập", "Đồng ý", "Hoàn toàn đồng ý"]
+  },
+  "dimensions": {
+    "SA": {
+      "name": { "en": "Self-Awareness", "vi": "Nhận thức bản thân" },
+      "definition": {
+        "en": "Noticing and naming your own emotional states.",
+        "vi": "Nhận ra và gọi tên những cảm xúc của chính mình."
+      }
+    },
+    "SR": {
+      "name": { "en": "Self-Regulation", "vi": "Tự điều chỉnh" },
+      "definition": {
+        "en": "Pausing and choosing your response when emotions run strong.",
+        "vi": "Tạm dừng và chọn cách phản ứng khi cảm xúc đang dâng cao."
+      }
+    },
+    "SO": {
+      "name": { "en": "Social Awareness", "vi": "Nhận thức xã hội" },
+      "definition": {
+        "en": "Considering the cues and perspectives of other people.",
+        "vi": "Quan tâm đến tín hiệu và góc nhìn của người khác."
+      }
+    },
+    "RM": {
+      "name": { "en": "Relationship Management", "vi": "Quản lý quan hệ" },
+      "definition": {
+        "en": "Communicating, listening, and repairing things after disagreements.",
+        "vi": "Giao tiếp, lắng nghe và hàn gắn sau những bất đồng."
+      }
+    }
+  },
+  "assessments": {
+    "quick": {
+      "order": [
+        "Q-SA-01", "Q-SR-03", "Q-SO-02", "Q-RM-01", "Q-SA-03", "Q-SR-01",
+        "Q-SO-03", "Q-RM-02", "Q-SR-02", "Q-SA-02", "Q-RM-03", "Q-SO-01"
+      ]
+    },
+    "full": {
+      "order": [
+        "Q-SA-01", "Q-SR-03", "Q-SO-02", "Q-RM-01", "F-SA-04", "F-SR-08",
+        "F-SO-04", "F-RM-08", "Q-SA-03", "Q-SR-01", "Q-SO-03", "Q-RM-02",
+        "F-SA-05", "F-SR-04", "F-SO-05", "F-RM-04", "F-SA-09", "F-SR-09",
+        "F-SO-08", "F-RM-09", "Q-SR-02", "Q-SA-02", "Q-RM-03", "Q-SO-01",
+        "F-SA-06", "F-SR-05", "F-SO-06", "F-RM-05", "F-SA-07", "F-SR-06",
+        "F-SO-07", "F-RM-06", "F-SA-10", "F-SR-10", "F-SO-09", "F-RM-07",
+        "F-SO-10", "F-SA-08", "F-SR-07", "F-RM-10"
+      ]
+    }
+  },
+  "questions": [
+    {
+      "id": "Q-SA-01", "dimension": "SA", "type": "self_report", "reverseScored": false, "inQuick": true,
+      "prompt": {
+        "en": "Most of the time, I can name what I'm feeling.",
+        "vi": "Phần lớn thời gian, tôi biết mình đang cảm thấy gì."
+      }
+    },
+    {
+      "id": "Q-SA-02", "dimension": "SA", "type": "self_report", "reverseScored": true, "inQuick": true,
+      "prompt": {
+        "en": "I usually act on a strong feeling before I've worked out where it came from.",
+        "vi": "Tôi thường hành động theo một cảm xúc mạnh trước khi kịp hiểu nó bắt nguồn từ đâu."
+      }
+    },
+    {
+      "id": "Q-SA-03", "dimension": "SA", "type": "situational", "inQuick": true,
+      "prompt": {
+        "en": "A short text from a friend leaves you unusually irritated. What would you most likely do first?",
+        "vi": "Một người bạn nhắn cho bạn một tin ngắn và khiến bạn bực bội một cách bất thường. Bạn có khả năng sẽ làm gì đầu tiên?"
+      },
+      "options": [
+        { "label": "A", "score": 1, "text": { "en": "Send a sharp reply so they know you're annoyed.", "vi": "Trả lời gay gắt để bạn ấy biết là bạn đang khó chịu." } },
+        { "label": "B", "score": 2, "text": { "en": "Let it go and carry on with your day without dwelling on it.", "vi": "Bỏ qua, coi như không có gì và tiếp tục ngày của mình." } },
+        { "label": "C", "score": 4, "text": { "en": "Stop and think about what in the message set you off.", "vi": "Dừng lại và nghĩ xem điều gì trong tin nhắn đã khiến bạn khó chịu." } },
+        { "label": "D", "score": 3, "text": { "en": "Ask someone else whether the message sounds irritating to them too.", "vi": "Hỏi thử người khác xem tin nhắn đó có làm họ thấy khó chịu không." } }
+      ]
+    },
+    {
+      "id": "Q-SR-01", "dimension": "SR", "type": "self_report", "reverseScored": false, "inQuick": true,
+      "prompt": {
+        "en": "Even when I'm frustrated, I can usually hold off on replying until I've cooled down a little.",
+        "vi": "Ngay cả khi bực bội, tôi thường vẫn có thể chưa trả lời vội cho đến khi bình tĩnh lại một chút."
+      }
+    },
+    {
+      "id": "Q-SR-02", "dimension": "SR", "type": "self_report", "reverseScored": true, "inQuick": true,
+      "prompt": {
+        "en": "When something goes wrong, my first reaction tends to decide what I do next.",
+        "vi": "Khi có chuyện không suôn sẻ, phản ứng đầu tiên của tôi thường quyết định việc tiếp theo tôi làm."
+      }
+    },
+    {
+      "id": "Q-SR-03", "dimension": "SR", "type": "situational", "inQuick": true,
+      "prompt": {
+        "en": "In a tense discussion, you notice your voice getting louder. What's the most constructive next step?",
+        "vi": "Trong một cuộc thảo luận căng thẳng, bạn nhận ra giọng mình đang to dần. Bước tiếp theo nào mang tính xây dựng nhất?"
+      },
+      "options": [
+        { "label": "A", "score": 4, "text": { "en": "Pause, lower your voice, and suggest a short break to regroup.", "vi": "Dừng lại, hạ giọng và đề nghị nghỉ một chút để lấy lại bình tĩnh." } },
+        { "label": "B", "score": 2, "text": { "en": "Speak even louder so your point doesn't get lost.", "vi": "Nói to hơn để ý kiến của mình không bị bỏ qua." } },
+        { "label": "C", "score": 3, "text": { "en": "Stay silent for the rest of the discussion without saying why.", "vi": "Im lặng đến hết buổi thảo luận mà không giải thích lý do." } },
+        { "label": "D", "score": 1, "text": { "en": "Make a personal remark about the other person.", "vi": "Nhận xét về con người của đối phương." } }
+      ]
+    },
+    {
+      "id": "Q-SO-01", "dimension": "SO", "type": "self_report", "reverseScored": false, "inQuick": true,
+      "prompt": {
+        "en": "Before I judge someone's behavior, I try to think about what they might be going through.",
+        "vi": "Trước khi đánh giá hành vi của ai đó, tôi thường thử nghĩ xem họ có thể đang trải qua điều gì."
+      }
+    },
+    {
+      "id": "Q-SO-02", "dimension": "SO", "type": "self_report", "reverseScored": true, "inQuick": true,
+      "prompt": {
+        "en": "I tend to assume I already know why people act the way they do, without checking.",
+        "vi": "Tôi thường cho rằng mình đã biết vì sao người khác cư xử như vậy, mà không hỏi lại."
+      }
+    },
+    {
+      "id": "Q-SO-03", "dimension": "SO", "type": "situational", "inQuick": true,
+      "prompt": {
+        "en": "A colleague who usually talks a lot goes quiet in a meeting. What would be a considerate response?",
+        "vi": "Một đồng nghiệp vốn hay nói bỗng im lặng suốt cuộc họp. Phản ứng nào thể hiện sự quan tâm?"
+      },
+      "options": [
+        { "label": "A", "score": 2, "text": { "en": "Assume they've lost interest in the topic.", "vi": "Cho rằng họ không còn hứng thú với chủ đề." } },
+        { "label": "B", "score": 4, "text": { "en": "Hold off on conclusions and, if it fits, check in with them privately.", "vi": "Đừng vội kết luận, và nếu phù hợp thì hỏi thăm riêng." } },
+        { "label": "C", "score": 1, "text": { "en": "Point out the change in front of everyone.", "vi": "Nêu sự thay đổi đó ngay trước mặt mọi người." } },
+        { "label": "D", "score": 3, "text": { "en": "Give them room, but stay open to hearing from them when they're ready.", "vi": "Để họ có không gian, nhưng vẫn sẵn sàng lắng nghe khi họ muốn chia sẻ." } }
+      ]
+    },
+    {
+      "id": "Q-RM-01", "dimension": "RM", "type": "self_report", "reverseScored": false, "inQuick": true,
+      "prompt": {
+        "en": "I can disagree with someone openly without making it personal.",
+        "vi": "Tôi có thể bất đồng với ai đó một cách thẳng thắn mà không biến nó thành chuyện cá nhân."
+      }
+    },
+    {
+      "id": "Q-RM-02", "dimension": "RM", "type": "self_report", "reverseScored": true, "inQuick": true,
+      "prompt": {
+        "en": "When a disagreement gets uncomfortable, I usually stop listening.",
+        "vi": "Khi một cuộc tranh luận bắt đầu khó chịu, tôi thường thôi không lắng nghe nữa."
+      }
+    },
+    {
+      "id": "Q-RM-03", "dimension": "RM", "type": "situational", "inQuick": true,
+      "prompt": {
+        "en": "You realize a comment you made hurt a friend's feelings. What would be a constructive response?",
+        "vi": "Bạn nhận ra một câu nói của mình đã làm tổn thương một người bạn. Phản ứng nào mang tính xây dựng?"
+      },
+      "options": [
+        { "label": "A", "score": 2, "text": { "en": "Explain right away why they shouldn't have been hurt.", "vi": "Giải thích ngay vì sao họ không nên bị tổn thương." } },
+        { "label": "B", "score": 1, "text": { "en": "Act as if nothing happened.", "vi": "Coi như không có chuyện gì xảy ra." } },
+        { "label": "C", "score": 4, "text": { "en": "Acknowledge the impact, listen, and apologize sincerely.", "vi": "Ghi nhận việc mình đã gây tổn thương, lắng nghe và xin lỗi một cách chân thành." } },
+        { "label": "D", "score": 3, "text": { "en": "Give them some time, then ask whether they'd like to talk.", "vi": "Cho họ thời gian, rồi hỏi xem họ có muốn trò chuyện không." } }
+      ]
+    },
+    {
+      "id": "F-SA-04", "dimension": "SA", "type": "self_report", "reverseScored": false, "inQuick": false,
+      "prompt": {
+        "en": "I can tell apart disappointment, frustration, and worry when they show up.",
+        "vi": "Tôi phân biệt được khi nào mình đang thất vọng, khi nào bực bội và khi nào lo lắng."
+      }
+    },
+    {
+      "id": "F-SA-05", "dimension": "SA", "type": "self_report", "reverseScored": false, "inQuick": false,
+      "prompt": {
+        "en": "When my mood shifts, I often notice it in my body first, like a tight chest or a warm face.",
+        "vi": "Khi tâm trạng thay đổi, tôi thường nhận ra điều đó qua cơ thể trước, chẳng hạn ngực thắt lại hoặc mặt nóng lên."
+      }
+    },
+    {
+      "id": "F-SA-06", "dimension": "SA", "type": "self_report", "reverseScored": true, "inQuick": false,
+      "prompt": {
+        "en": "Even when I try, I often can't say what I'm feeling, not even to myself.",
+        "vi": "Dù đã cố gắng, tôi vẫn thường không nói được mình đang cảm thấy gì, kể cả với chính mình."
+      }
+    },
+    {
+      "id": "F-SA-07", "dimension": "SA", "type": "self_report", "reverseScored": false, "inQuick": false,
+      "prompt": {
+        "en": "I know which kinds of situations tend to stir up my strongest emotions.",
+        "vi": "Tôi biết những tình huống nào thường khơi dậy những cảm xúc mạnh nhất của mình."
+      }
+    },
+    {
+      "id": "F-SA-08", "dimension": "SA", "type": "situational", "inQuick": false,
+      "prompt": {
+        "en": "After a meeting, you feel unsettled but can't say why. What would help you make sense of the reaction?",
+        "vi": "Sau một cuộc họp, bạn thấy bồn chồn nhưng không biết vì sao. Điều gì sẽ giúp bạn hiểu được phản ứng đó?"
+      },
+      "options": [
+        { "label": "A", "score": 4, "text": { "en": "Replay the meeting and find the moment that affected you most.", "vi": "Nhớ lại cuộc họp và tìm ra khoảnh khắc khiến bạn bị tác động nhiều nhất." } },
+        { "label": "B", "score": 1, "text": { "en": "Decide the other people were being unfair.", "vi": "Cho rằng những người khác đã đối xử không công bằng." } },
+        { "label": "C", "score": 2, "text": { "en": "Keep busy with something else and not think about it again.", "vi": "Bận rộn với việc khác và không nghĩ lại chuyện đó nữa." } },
+        { "label": "D", "score": 3, "text": { "en": "Ask a trusted person to help you think it through, without expecting them to decide for you.", "vi": "Nhờ một người đáng tin giúp bạn suy nghĩ, nhưng để bạn tự quyết định." } }
+      ]
+    },
+    {
+      "id": "F-SA-09", "dimension": "SA", "type": "situational", "inQuick": false,
+      "prompt": {
+        "en": "You get feedback that catches you off guard. What's a useful first step before deciding what you think of it?",
+        "vi": "Bạn nhận được một góp ý khiến bạn bất ngờ. Bước đầu tiên nào hữu ích trước khi quyết định bạn nghĩ gì về nó?"
+      },
+      "options": [
+        { "label": "A", "score": 1, "text": { "en": "Dismiss it right away.", "vi": "Gạt đi ngay lập tức." } },
+        { "label": "B", "score": 4, "text": { "en": "Notice your first reaction and separate it from what the feedback actually says.", "vi": "Chú ý đến phản ứng đầu tiên của mình và tách nó ra khỏi nội dung góp ý." } },
+        { "label": "C", "score": 2, "text": { "en": "Agree with everything just to ease the discomfort.", "vi": "Đồng ý với mọi điều để khỏi khó chịu." } },
+        { "label": "D", "score": 3, "text": { "en": "Take your time and go back over the specific examples later.", "vi": "Dành thời gian và xem lại các ví dụ cụ thể sau đó." } }
+      ]
+    },
+    {
+      "id": "F-SA-10", "dimension": "SA", "type": "situational", "inQuick": false,
+      "prompt": {
+        "en": "You were looking forward to a weekend trip, but when it's time to leave you feel a flat, heavy mood and don't know why. What would you most likely do?",
+        "vi": "Bạn đã mong chờ một chuyến đi cuối tuần, nhưng đến lúc xuất phát bạn lại thấy tâm trạng trĩu nặng mà không rõ vì sao. Bạn có khả năng sẽ làm gì?"
+      },
+      "options": [
+        { "label": "A", "score": 2, "text": { "en": "Tell yourself you're being silly and push through it.", "vi": "Tự nhủ mình đang làm quá lên rồi cố vượt qua." } },
+        { "label": "B", "score": 4, "text": { "en": "Take a few minutes to check in: what has changed since this morning?", "vi": "Dành vài phút để tự hỏi xem từ sáng đến giờ đã có điều gì thay đổi." } },
+        { "label": "C", "score": 1, "text": { "en": "Blame whoever is around you for spoiling the mood.", "vi": "Đổ lỗi cho người đang ở gần mình vì đã làm hỏng tâm trạng." } },
+        { "label": "D", "score": 3, "text": { "en": "Wait until you arrive and see whether the mood lifts on its own.", "vi": "Đợi đến nơi xem tâm trạng có tự khá lên không." } }
+      ]
+    },
+    {
+      "id": "F-SR-04", "dimension": "SR", "type": "self_report", "reverseScored": false, "inQuick": false,
+      "prompt": {
+        "en": "Even when I'm upset, I can pick a response that fits what I want in the long run.",
+        "vi": "Dù đang buồn, tôi vẫn chọn được cách phản ứng phù hợp với điều mình muốn về lâu dài."
+      }
+    },
+    {
+      "id": "F-SR-05", "dimension": "SR", "type": "self_report", "reverseScored": false, "inQuick": false,
+      "prompt": {
+        "en": "After a stressful moment, I have a few ways of settling down that actually work for me.",
+        "vi": "Sau một lúc căng thẳng, tôi có vài cách giúp mình bình tĩnh lại và thực sự hiệu quả."
+      }
+    },
+    {
+      "id": "F-SR-06", "dimension": "SR", "type": "self_report", "reverseScored": true, "inQuick": false,
+      "prompt": {
+        "en": "Once I'm irritated, it's hard for me to move my attention onto something else.",
+        "vi": "Một khi đã khó chịu, tôi khó chuyển sự chú ý sang chuyện khác."
+      }
+    },
+    {
+      "id": "F-SR-07", "dimension": "SR", "type": "self_report", "reverseScored": false, "inQuick": false,
+      "prompt": {
+        "en": "When a conversation gets heated, I'm comfortable asking for a few minutes to think.",
+        "vi": "Khi cuộc trò chuyện trở nên căng thẳng, tôi thoải mái xin vài phút để suy nghĩ."
+      }
+    },
+    {
+      "id": "F-SR-08", "dimension": "SR", "type": "situational", "inQuick": false,
+      "prompt": {
+        "en": "A frustrating email arrives late in the day. What's a thoughtful way to handle it?",
+        "vi": "Cuối ngày, bạn nhận được một email khiến bạn bực mình. Cách xử lý nào là chín chắn?"
+      },
+      "options": [
+        { "label": "A", "score": 1, "text": { "en": "Reply straight away with anger.", "vi": "Trả lời ngay lập tức bằng giọng giận dữ." } },
+        { "label": "B", "score": 4, "text": { "en": "Draft a reply, leave it for a while, then reread it before sending.", "vi": "Soạn sẵn câu trả lời, để đó một lúc, rồi đọc lại trước khi gửi." } },
+        { "label": "C", "score": 2, "text": { "en": "Forward it to others with a snide comment.", "vi": "Chuyển tiếp cho người khác kèm lời mỉa mai." } },
+        { "label": "D", "score": 3, "text": { "en": "Leave it unanswered for an indefinite time.", "vi": "Không trả lời, để đó vô thời hạn." } }
+      ]
+    },
+    {
+      "id": "F-SR-09", "dimension": "SR", "type": "situational", "inQuick": false,
+      "prompt": {
+        "en": "A plan changes at the last minute and you feel overwhelmed. What could help you respond well?",
+        "vi": "Kế hoạch thay đổi phút chót và bạn thấy quá tải. Điều gì có thể giúp bạn ứng phó tốt?"
+      },
+      "options": [
+        { "label": "A", "score": 1, "text": { "en": "Blame whoever is closest to you.", "vi": "Đổ lỗi cho người đứng gần nhất." } },
+        { "label": "B", "score": 2, "text": { "en": "Drop the plan without telling anyone.", "vi": "Bỏ kế hoạch mà không báo cho ai." } },
+        { "label": "C", "score": 4, "text": { "en": "Find the next manageable step and say clearly what needs to change.", "vi": "Tìm bước tiếp theo có thể làm được và nói rõ điều gì cần thay đổi." } },
+        { "label": "D", "score": 3, "text": { "en": "Take a short pause, then reassess your priorities.", "vi": "Nghỉ một chút rồi xem lại thứ tự ưu tiên." } }
+      ]
+    },
+    {
+      "id": "F-SR-10", "dimension": "SR", "type": "situational", "inQuick": false,
+      "prompt": {
+        "en": "A friend's offhand comment about your work stings, and you're about to answer in a clipped tone in the group chat. What would you most likely do?",
+        "vi": "Một nhận xét thoáng qua của bạn bè về công việc của bạn khiến bạn tổn thương, và bạn sắp trả lời trong nhóm chat với giọng cộc lốc. Bạn có khả năng sẽ làm gì?"
+      },
+      "options": [
+        { "label": "A", "score": 1, "text": { "en": "Hit back with a jab to even the score.", "vi": "Đáp lại bằng một câu châm chọc để gỡ lại thế cân bằng." } },
+        { "label": "B", "score": 4, "text": { "en": "Wait until you've cooled down, then reply or bring it up with them directly.", "vi": "Đợi đến khi bình tĩnh lại, rồi trả lời hoặc nói thẳng với bạn ấy." } },
+        { "label": "C", "score": 2, "text": { "en": "Stop replying and let them wonder what's wrong.", "vi": "Ngừng trả lời và để họ thắc mắc chuyện gì đang xảy ra." } },
+        { "label": "D", "score": 3, "text": { "en": "Stay in the chat but say nothing until the topic moves on.", "vi": "Vẫn ở trong nhóm nhưng không nói gì cho đến khi chủ đề chuyển sang chuyện khác." } }
+      ]
+    },
+    {
+      "id": "F-SO-04", "dimension": "SO", "type": "self_report", "reverseScored": false, "inQuick": false,
+      "prompt": {
+        "en": "Before reading too much into someone's tone or expression, I look at the wider context.",
+        "vi": "Trước khi suy diễn quá nhiều từ giọng điệu hay nét mặt của ai đó, tôi xem xét bối cảnh xung quanh."
+      }
+    },
+    {
+      "id": "F-SO-05", "dimension": "SO", "type": "self_report", "reverseScored": false, "inQuick": false,
+      "prompt": {
+        "en": "When someone sees things differently from me, I can listen without already planning my reply.",
+        "vi": "Khi ai đó nhìn nhận khác tôi, tôi có thể lắng nghe mà không vội soạn sẵn câu phản bác."
+      }
+    },
+    {
+      "id": "F-SO-06", "dimension": "SO", "type": "self_report", "reverseScored": true, "inQuick": false,
+      "prompt": {
+        "en": "It rarely occurs to me that someone else might see the same situation differently.",
+        "vi": "Tôi hiếm khi nghĩ rằng người khác có thể nhìn cùng một tình huống theo cách khác."
+      }
+    },
+    {
+      "id": "F-SO-07", "dimension": "SO", "type": "self_report", "reverseScored": false, "inQuick": false,
+      "prompt": {
+        "en": "I notice when someone needs space more than they need advice.",
+        "vi": "Tôi nhận ra khi ai đó cần không gian hơn là cần lời khuyên."
+      }
+    },
+    {
+      "id": "F-SO-08", "dimension": "SO", "type": "situational", "inQuick": false,
+      "prompt": {
+        "en": "A friend has cancelled plans twice in a row. What's a balanced way to respond?",
+        "vi": "Một người bạn đã hủy hẹn hai lần liên tiếp. Cách phản ứng nào là cân bằng?"
+      },
+      "options": [
+        { "label": "A", "score": 1, "text": { "en": "Accuse them of not caring.", "vi": "Trách họ không quan tâm." } },
+        { "label": "B", "score": 4, "text": { "en": "Ask calmly whether something is making plans hard, and say how it affects you.", "vi": "Hỏi nhẹ nhàng xem có điều gì khiến việc hẹn khó khăn không, và nói rõ việc này ảnh hưởng đến bạn ra sao." } },
+        { "label": "C", "score": 2, "text": { "en": "Stop reaching out without any explanation.", "vi": "Ngừng liên lạc mà không giải thích." } },
+        { "label": "D", "score": 3, "text": { "en": "Assume they're busy and say nothing.", "vi": "Cho rằng họ bận và không nói gì." } }
+      ]
+    },
+    {
+      "id": "F-SO-09", "dimension": "SO", "type": "situational", "inQuick": false,
+      "prompt": {
+        "en": "Someone pushes back on your view hard in a group discussion. What can help you understand where they're coming from?",
+        "vi": "Trong một buổi thảo luận nhóm, có người phản đối quan điểm của bạn rất mạnh. Điều gì giúp bạn hiểu được góc nhìn của họ?"
+      },
+      "options": [
+        { "label": "A", "score": 4, "text": { "en": "Ask a clarifying question, then sum up what you heard.", "vi": "Hỏi lại để làm rõ, rồi tóm tắt những gì bạn nghe được." } },
+        { "label": "B", "score": 1, "text": { "en": "Cut in to correct them.", "vi": "Ngắt lời để sửa lại họ." } },
+        { "label": "C", "score": 2, "text": { "en": "Assume they're just being difficult.", "vi": "Cho rằng họ chỉ đang cố tình gây khó dễ." } },
+        { "label": "D", "score": 3, "text": { "en": "Wait until later and think about what might lie behind their view.", "vi": "Đợi đến lúc khác và suy nghĩ về lý do đằng sau quan điểm đó." } }
+      ]
+    },
+    {
+      "id": "F-SO-10", "dimension": "SO", "type": "situational", "inQuick": false,
+      "prompt": {
+        "en": "You notice a new team member being left out of a lunch plan. What would you most likely do?",
+        "vi": "Bạn nhận ra một thành viên mới trong nhóm bị bỏ quên khi lên kế hoạch đi ăn trưa. Bạn có khả năng sẽ làm gì?"
+      },
+      "options": [
+        { "label": "A", "score": 1, "text": { "en": "Tell the group in front of the newcomer that they should be more inclusive.", "vi": "Nói trước mặt người mới rằng cả nhóm nên cởi mở hơn." } },
+        { "label": "B", "score": 2, "text": { "en": "Assume it was an accident and not mention it.", "vi": "Cho rằng đó chỉ là sơ suất và không nhắc đến." } },
+        { "label": "C", "score": 4, "text": { "en": "Quietly invite them along, or check whether they'd like to join.", "vi": "Lặng lẽ rủ họ đi cùng, hoặc hỏi xem họ có muốn tham gia không." } },
+        { "label": "D", "score": 3, "text": { "en": "Feel bad about it but leave things as they are.", "vi": "Thấy không ổn nhưng để mọi thứ như cũ." } }
+      ]
+    },
+    {
+      "id": "F-RM-04", "dimension": "RM", "type": "self_report", "reverseScored": false, "inQuick": false,
+      "prompt": {
+        "en": "When I need something, I can ask for it without blaming the other person.",
+        "vi": "Khi cần điều gì, tôi có thể nói ra mà không đổ lỗi cho người kia."
+      }
+    },
+    {
+      "id": "F-RM-05", "dimension": "RM", "type": "self_report", "reverseScored": false, "inQuick": false,
+      "prompt": {
+        "en": "After an argument, I'm willing to go back to the conversation and work toward understanding each other.",
+        "vi": "Sau một cuộc cãi vã, tôi sẵn sàng quay lại cuộc trò chuyện để hiểu nhau hơn."
+      }
+    },
+    {
+      "id": "F-RM-06", "dimension": "RM", "type": "self_report", "reverseScored": true, "inQuick": false,
+      "prompt": {
+        "en": "Sometimes I go quiet on purpose so the other person feels guilty.",
+        "vi": "Đôi khi tôi cố tình im lặng để người kia cảm thấy có lỗi."
+      }
+    },
+    {
+      "id": "F-RM-07", "dimension": "RM", "type": "self_report", "reverseScored": false, "inQuick": false,
+      "prompt": {
+        "en": "I can say no or set a limit and still stay kind about it.",
+        "vi": "Tôi có thể từ chối hoặc đặt ra giới hạn mà vẫn giữ thái độ tử tế."
+      }
+    },
+    {
+      "id": "F-RM-08", "dimension": "RM", "type": "situational", "inQuick": false,
+      "prompt": {
+        "en": "A teammate misses a commitment that affects your work. What's a constructive response?",
+        "vi": "Một đồng đội bỏ lỡ cam kết khiến công việc của bạn bị ảnh hưởng. Phản ứng nào mang tính xây dựng?"
+      },
+      "options": [
+        { "label": "A", "score": 1, "text": { "en": "Criticize them in the group chat.", "vi": "Chỉ trích họ trong nhóm chat." } },
+        { "label": "B", "score": 2, "text": { "en": "Quietly finish the work and let the resentment build up.", "vi": "Lặng lẽ làm hết phần việc và để sự bực bội tích tụ dần." } },
+        { "label": "C", "score": 4, "text": { "en": "Talk about the impact in private, ask what happened, and agree on next steps.", "vi": "Trao đổi riêng về tác động, hỏi xem chuyện gì đã xảy ra và thống nhất các bước tiếp theo." } },
+        { "label": "D", "score": 3, "text": { "en": "Keep your distance for a while.", "vi": "Giữ khoảng cách với họ một thời gian." } }
+      ]
+    },
+    {
+      "id": "F-RM-09", "dimension": "RM", "type": "situational", "inQuick": false,
+      "prompt": {
+        "en": "You and a family member keep having the same argument. What might help?",
+        "vi": "Bạn và một người thân trong gia đình cứ lặp đi lặp lại cùng một cuộc cãi vã. Điều gì có thể giúp ích?"
+      },
+      "options": [
+        { "label": "A", "score": 1, "text": { "en": "Repeat your point, only more forcefully.", "vi": "Nhắc lại quan điểm của mình, nhưng nói mạnh hơn." } },
+        { "label": "B", "score": 4, "text": { "en": "Pause and think about what each of you is trying to protect.", "vi": "Dừng lại và nghĩ xem mỗi người đang muốn bảo vệ điều gì." } },
+        { "label": "C", "score": 2, "text": { "en": "Bring other people in so they take your side.", "vi": "Kéo người khác vào để họ đứng về phía mình." } },
+        { "label": "D", "score": 3, "text": { "en": "Put the conversation off until you both are calmer.", "vi": "Hoãn cuộc trò chuyện đến khi cả hai đều bình tĩnh hơn." } }
+      ]
+    },
+    {
+      "id": "F-RM-10", "dimension": "RM", "type": "situational", "inQuick": false,
+      "prompt": {
+        "en": "Someone you live with keeps leaving shared chores half-done, and you're starting to resent it. What would you most likely do?",
+        "vi": "Người sống chung với bạn liên tục bỏ dở việc nhà chung, và bạn bắt đầu thấy bực. Bạn có khả năng sẽ làm gì?"
+      },
+      "options": [
+        { "label": "A", "score": 1, "text": { "en": "Make a sarcastic comment so they know you're fed up.", "vi": "Buông một câu mỉa mai để họ biết bạn đã chán." } },
+        { "label": "B", "score": 2, "text": { "en": "Keep covering the chores and say nothing.", "vi": "Tiếp tục làm thay phần việc và không nói gì." } },
+        { "label": "C", "score": 4, "text": { "en": "Choose a calm moment to describe what you've noticed and ask how to split the load more fairly.", "vi": "Chọn lúc yên ổn để nói về điều bạn để ý và hỏi cách chia việc hợp lý hơn." } },
+        { "label": "D", "score": 3, "text": { "en": "Wait and see whether it happens again.", "vi": "Chờ xem lần sau có lặp lại không." } }
+      ]
+    }
+  ]
+}

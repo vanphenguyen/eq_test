@@ -1,0 +1,207 @@
+{
+  "contentVersion": "1.1.0",
+  "overallBands": {
+    "developing": {
+      "en": "Your responses may point to an area you could explore with small, practical steps.",
+      "vi": "Câu trả lời của bạn có thể gợi ý một lĩnh vực bạn muốn khám phá thêm, bằng những bước nhỏ và thiết thực."
+    },
+    "emerging": {
+      "en": "Your responses may show some helpful habits, alongside chances to build more consistency.",
+      "vi": "Câu trả lời của bạn có thể cho thấy một số thói quen hữu ích, bên cạnh cơ hội để duy trì đều đặn hơn."
+    },
+    "growing": {
+      "en": "Your responses may suggest several developing habits you can keep strengthening.",
+      "vi": "Câu trả lời của bạn có thể gợi ý vài thói quen đang phát triển mà bạn có thể tiếp tục củng cố."
+    },
+    "strong": {
+      "en": "Your responses may indicate habits that are useful strengths in the situations this assessment covers.",
+      "vi": "Câu trả lời của bạn có thể cho thấy những thói quen là điểm mạnh trong các tình huống mà bài đánh giá này đề cập."
+    }
+  },
+  "dimensionBandText": {
+    "SA": {
+      "developing": {
+        "en": "Naming what you feel may not come easily yet. A short check-in with yourself during the day could be a good place to start.",
+        "vi": "Việc gọi tên cảm xúc có thể chưa dễ dàng với bạn. Một lần tự hỏi bản thân ngắn trong ngày có thể là điểm khởi đầu tốt."
+      },
+      "emerging": {
+        "en": "You likely notice some of your emotions, though the details may slip away when things get busy.",
+        "vi": "Bạn có thể nhận ra một số cảm xúc của mình, dù chi tiết đôi khi trôi đi khi bận rộn."
+      },
+      "growing": {
+        "en": "You may recognize your emotional states fairly well. Looking at the situations that tend to stir them up could add useful detail.",
+        "vi": "Bạn có thể nhận ra các trạng thái cảm xúc khá rõ. Nhìn lại những tình huống thường khơi dậy chúng có thể làm bức tranh thêm chi tiết hữu ích."
+      },
+      "strong": {
+        "en": "Your responses may suggest a clear sense of your emotional states and of what tends to set them off.",
+        "vi": "Câu trả lời của bạn có thể cho thấy bạn hiểu rõ các trạng thái cảm xúc và điều thường kích hoạt chúng."
+      }
+    },
+    "SR": {
+      "developing": {
+        "en": "Strong feelings may often go first. Small pauses before you act could help you feel more in charge of your choices.",
+        "vi": "Cảm xúc mạnh có thể thường đi trước. Những khoảng dừng nhỏ trước khi hành động có thể giúp bạn cảm thấy làm chủ lựa chọn hơn."
+      },
+      "emerging": {
+        "en": "You can sometimes slow down when emotions run high. Building that pause into more moments could help.",
+        "vi": "Đôi khi bạn có thể chậm lại khi cảm xúc dâng cao. Đưa khoảng dừng ấy vào nhiều thời điểm hơn có thể giúp ích."
+      },
+      "growing": {
+        "en": "You often keep your response steady. Frustration may still take over in some moments, and those are worth a closer look.",
+        "vi": "Bạn thường giữ được phản ứng ổn định. Vẫn có lúc bực bội chiếm ưu thế, và những lúc đó đáng để nhìn kỹ hơn."
+      },
+      "strong": {
+        "en": "Your responses may suggest that you choose how to respond thoughtfully, even when you feel strongly.",
+        "vi": "Câu trả lời của bạn có thể cho thấy bạn chọn cách phản ứng một cách chín chắn, ngay cả khi cảm xúc mạnh."
+      }
+    },
+    "SO": {
+      "developing": {
+        "en": "It may help to pause and consider what the other person might be going through before you draw conclusions.",
+        "vi": "Có thể sẽ hữu ích nếu bạn dừng lại và nghĩ xem người kia có thể đang trải qua điều gì trước khi kết luận."
+      },
+      "emerging": {
+        "en": "You show some attention to other people's views, though a first impression sometimes wins out.",
+        "vi": "Bạn có chú ý đến quan điểm của người khác, dù ấn tượng ban đầu đôi khi chiếm ưu thế."
+      },
+      "growing": {
+        "en": "You often consider other people's context and needs. Checking your assumptions now and then may add more accuracy.",
+        "vi": "Bạn thường cân nhắc bối cảnh và nhu cầu của người khác. Thỉnh thoảng kiểm tra lại giả định có thể giúp bạn chính xác hơn."
+      },
+      "strong": {
+        "en": "Your responses may suggest that you read situations and people with care, and that you check your assumptions.",
+        "vi": "Câu trả lời của bạn có thể cho thấy bạn quan sát tình huống và con người một cách cẩn trọng, và biết kiểm tra giả định của mình."
+      }
+    },
+    "RM": {
+      "developing": {
+        "en": "Staying with a disagreement may feel hard. Listening a little longer before you respond might open more room to work things out.",
+        "vi": "Ở lại với một bất đồng có thể khó khăn. Lắng nghe lâu hơn một chút trước khi đáp lại có thể mở ra không gian để cùng giải quyết."
+      },
+      "emerging": {
+        "en": "You can handle some disagreements constructively, though tense moments may pull you off course.",
+        "vi": "Bạn có thể xử lý một số bất đồng một cách xây dựng, dù những lúc căng thẳng đôi khi kéo bạn đi lệch hướng."
+      },
+      "growing": {
+        "en": "You often keep relationships steady through disagreement. Practicing repair after a conflict may strengthen this further.",
+        "vi": "Bạn thường giữ được sự ổn định trong quan hệ khi có bất đồng. Luyện cách hàn gắn sau xung đột có thể củng cố thêm điều này."
+      },
+      "strong": {
+        "en": "Your responses may suggest that you handle disagreements and repair with respect and clarity.",
+        "vi": "Câu trả lời của bạn có thể cho thấy bạn xử lý bất đồng và hàn gắn với sự tôn trọng và rõ ràng."
+      }
+    }
+  },
+  "dimensionStrengths": {
+    "SA": {
+      "en": "You are able to notice what is happening inside you, which gives you a starting point for every other skill.",
+      "vi": "Bạn có khả năng nhận ra điều đang diễn ra bên trong mình, đó là điểm xuất phát cho mọi kỹ năng khác."
+    },
+    "SR": {
+      "en": "You have ways to settle yourself, which can make it easier to choose a response you feel good about later.",
+      "vi": "Bạn có cách để tự trấn an, điều này giúp bạn dễ chọn một phản ứng mà sau này vẫn thấy ổn."
+    },
+    "SO": {
+      "en": "You keep other people's perspectives in view, which helps you read a situation more fully.",
+      "vi": "Bạn luôn nghĩ đến góc nhìn của người khác, giúp bạn hiểu tình huống trọn vẹn hơn."
+    },
+    "RM": {
+      "en": "You value the relationship as well as the point you are making, which keeps conversations open.",
+      "vi": "Bạn coi trọng mối quan hệ không kém gì điều mình muốn nói, nhờ đó các cuộc trò chuyện vẫn cởi mở."
+    }
+  },
+  "dimensionGrowth": {
+    "SA": {
+      "en": "Naming feelings more precisely, and noticing the body signals that come with them, may open up more options.",
+      "vi": "Gọi tên cảm xúc chính xác hơn và chú ý đến tín hiệu của cơ thể đi kèm có thể mở ra nhiều lựa chọn hơn."
+    },
+    "SR": {
+      "en": "Building a short pause into moments of strong emotion, and having a few calming routines ready, may make choices feel less rushed.",
+      "vi": "Đưa một khoảng dừng ngắn vào những lúc cảm xúc mạnh, và chuẩn bị sẵn vài cách bình tĩnh, có thể khiến các lựa chọn bớt vội vàng."
+    },
+    "SO": {
+      "en": "Checking your first impression with a question, before acting on it, may give you a fuller picture of other people.",
+      "vi": "Hỏi lại để kiểm chứng ấn tượng đầu tiên trước khi hành động có thể giúp bạn hình dung đầy đủ hơn về người khác."
+    },
+    "RM": {
+      "en": "Describing the impact of a problem without blaming, and returning to a difficult conversation later, may help relationships recover.",
+      "vi": "Mô tả tác động của vấn đề mà không đổ lỗi, và quay lại một cuộc trò chuyện khó khăn sau đó, có thể giúp các mối quan hệ phục hồi."
+    }
+  },
+  "dimensionSuggestion": {
+    "SA": {
+      "en": "Try a one-minute check-in at lunchtime: name the feeling, then guess where it came from.",
+      "vi": "Thử dành một phút vào giờ trưa để tự hỏi: mình đang cảm thấy gì, và cảm xúc đó có thể đến từ đâu."
+    },
+    "SR": {
+      "en": "When you notice your voice or pace speeding up, take three slow breaths before you speak.",
+      "vi": "Khi bạn nhận ra giọng nói hoặc nhịp độ đang nhanh lên, hãy hít thở chậm ba lần trước khi nói."
+    },
+    "SO": {
+      "en": "In your next conversation, ask one open question before you share your own view.",
+      "vi": "Trong cuộc trò chuyện tiếp theo, hãy hỏi một câu mở trước khi đưa ra quan điểm của mình."
+    },
+    "RM": {
+      "en": "Next time a disagreement heats up, try summarizing the other person's point before you respond.",
+      "vi": "Lần tới khi một bất đồng trở nên gay gắt, hãy thử tóm tắt quan điểm của người kia trước khi đáp lại."
+    }
+  },
+  "practicePlan": [
+    {
+      "day": 1, "dimension": "SA",
+      "title": { "en": "Name three feelings", "vi": "Gọi tên ba cảm xúc" },
+      "body": {
+        "en": "At three points today, pause and name the feeling you have. Write down one word for each.",
+        "vi": "Hôm nay, hãy dừng lại ba lần và gọi tên cảm xúc đang có. Viết một từ cho mỗi lần."
+      }
+    },
+    {
+      "day": 2, "dimension": "SR",
+      "title": { "en": "The one-breath delay", "vi": "Chậm lại một nhịp thở" },
+      "body": {
+        "en": "Before replying to a message that bothers you, take one full breath. Notice whether your reply changes.",
+        "vi": "Trước khi trả lời một tin nhắn khiến bạn khó chịu, hãy hít thở đủ một hơi. Để ý xem câu trả lời có thay đổi không."
+      }
+    },
+    {
+      "day": 3, "dimension": "SO",
+      "title": { "en": "Ask before you assume", "vi": "Hỏi trước khi suy đoán" },
+      "body": {
+        "en": "Pick one person you interact with today. If you're unsure why they acted a certain way, ask a simple question instead of guessing.",
+        "vi": "Chọn một người bạn gặp hôm nay. Nếu chưa rõ vì sao họ hành động như vậy, hãy hỏi một câu đơn giản thay vì đoán."
+      }
+    },
+    {
+      "day": 4, "dimension": "RM",
+      "title": { "en": "Say what you need", "vi": "Nói điều bạn cần" },
+      "body": {
+        "en": "Make one request today using 'I need…' instead of 'You always…'. Keep it short and specific.",
+        "vi": "Hôm nay, hãy đưa ra một yêu cầu bằng câu 'Mình cần…' thay vì 'Bạn lúc nào cũng…'. Giữ cho ngắn gọn và cụ thể."
+      }
+    },
+    {
+      "day": 5, "dimension": "SA",
+      "title": { "en": "Notice the body", "vi": "Lắng nghe cơ thể" },
+      "body": {
+        "en": "Once today, notice where you feel tension in your body. Ask yourself what it might be telling you.",
+        "vi": "Một lần hôm nay, hãy để ý xem cơ thể bạn căng ở đâu. Tự hỏi điều đó có thể đang nói gì với bạn."
+      }
+    },
+    {
+      "day": 6, "dimension": "SR",
+      "title": { "en": "Plan a reset", "vi": "Lên sẵn một cách reset" },
+      "body": {
+        "en": "Choose one calming activity you can do in five minutes, such as a short walk or a glass of water. Use it once today.",
+        "vi": "Chọn một hoạt động giúp dịu lại trong năm phút, như đi bộ ngắn hoặc uống một ly nước. Hôm nay hãy thử một lần."
+      }
+    },
+    {
+      "day": 7, "dimension": "RM",
+      "title": { "en": "Revisit a conversation", "vi": "Quay lại một cuộc trò chuyện" },
+      "body": {
+        "en": "Think of a recent disagreement. If it still matters, reopen it with one sentence about what you understand now.",
+        "vi": "Nghĩ về một bất đồng gần đây. Nếu điều đó vẫn quan trọng với bạn, hãy mở lại chuyện đó bằng một câu nói về điều bạn hiểu hơn bây giờ."
+      }
+    }
+  ]
+}
